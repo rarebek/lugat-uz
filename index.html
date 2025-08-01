@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uz" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'zbekcha So'z Lug'ati | Yangi So'zlar Tarjimoni</title>
+    <meta name="description" content="O'zlashtirma so'zlarning o'zbekcha muqobillarini toping">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <span class="logo-icon">📚</span>
+                O'zbekcha Lug'at
+            </h1>
+            <p class="tagline">O'zlashtirma so'zlarning o'zbekcha muqobillarini toping</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="search-section">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            placeholder="So'z qidiring..." 
+                            class="search-input"
+                            autocomplete="off"
+                        >
+                        <button class="search-btn" aria-label="Qidirish">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="search-stats">
+                        <span id="totalWords">40</span> ta so'z mavjud
+                    </div>
+                </div>
+            </section>
+
+            <section class="results-section">
+                <div class="filter-tabs">
+                    <button class="tab-btn active" data-filter="all">Barchasi</button>
+                    <button class="tab-btn" data-filter="tech">Texnologiya</button>
+                    <button class="tab-btn" data-filter="general">Umumiy</button>
+                </div>
+
+                <div class="words-grid" id="wordsGrid">
+                    <!-- Words will be populated by JavaScript -->
+                </div>
+
+                <div class="no-results" id="noResults" style="display: none;">
+                    <div class="no-results-icon">🔍</div>
+                    <h3>Hech narsa topilmadi</h3>
+                    <p>Boshqa kalit so'z bilan qidirib ko'ring</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 O'zbekcha Lug'at. Barcha huquqlar himoyalangan.</p>
+            <p class="footer-note">O'zbek tilini rivojlantirish uchun</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
